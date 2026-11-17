@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "dataset": "pkdarabi/bone-fracture-detection-computer-vision-project",
+    "model": "YOLOv8n",
+    "imgsz": 640,
+    "epochs": 5,
+    "batch": 16,
+    "lr0": 0.01,
+    "seed": 42,
+    "conf": 0.05,
+    "iou": 0.4,
+    "n_test_images": 1242,
+    "n_test_positive": 594,
+    "n_test_negative": 648,
+    "split_method": "grouped (patient id / augmentation-source) shuffle, seed=42",
+    "note": "mAP/precision/recall (Ultralytics) are class-averaged at the validator's max-F1 point; box-level precision/recall/IoU are class-agnostic at IoU>=0.5 and the chosen confidence."
+  },
+  "detection": {
+    "precision": 0.23230214943299413,
+    "recall": 0.21948095312640845,
+    "map50": 0.15427690373091812,
+    "map50_95": 0.04555508215650492,
+    "mean_matched_iou": 0.663354016629337,
+    "box_precision_at_threshold": 0.20955882352941177,
+    "box_recall_at_threshold": 0.3285302593659942,
+    "box_f1_at_threshold": 0.2558922558922559
+  },
+  "image_level": {
+    "sensitivity": 0.7643097643097643,
+    "specificity": 0.7777777777777778,
+    "precision": 0.7591973244147158,
+    "f1": 0.761744966442953,
+    "accuracy": 0.7713365539452496,
+    "tp": 454,
+    "fp": 144,
+    "tn": 504,
+    "fn": 140
+  },
+  "latency_ms": {
+    "mean": 10.511877499980073,
+    "median": 9.482828000045629,
+    "p95": 15.568865250008912,
+    "std": 2.214211501786641,
+    "warmup_runs": 10,
+    "timed_runs": 50,
+    "imgsz": 640,
+    "batch_size": 1,
+    "conf": 0.05,
+    "iou": 0.4,
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "torch": "2.11.0+cu130",
+    "device": "Tesla T4"
+  }
+}

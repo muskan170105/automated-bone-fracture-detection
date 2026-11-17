@@ -1,0 +1,441 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* =========================================
+   THEME VARIABLES
+   ========================================= */
+
+:root {
+    --navy: #0A2540;
+    --blue: #0B6FD6;
+    --sky: #E8F2FD;
+    --teal: #12B5A6;
+    --ink: #1E2A3A;
+    --muted: #5B6B80;
+    --line: #E3EAF3;
+}
+
+/* =========================================
+   GLOBAL STYLING
+   ========================================= */
+
+html,
+body,
+.stApp {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.stApp {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6FAFF 100%);
+    color: var(--ink);
+}
+
+#MainMenu,
+footer {
+    visibility: hidden;
+}
+
+.block-container {
+    padding-top: 2rem;
+    max-width: 1200px;
+}
+
+/* Main headings */
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--navy);
+    letter-spacing: -0.01em;
+}
+
+/* Main application text */
+
+[data-testid="stAppViewContainer"] {
+    color: var(--ink);
+}
+
+[data-testid="stAppViewContainer"] .stMarkdown,
+[data-testid="stAppViewContainer"] .stMarkdown p,
+[data-testid="stAppViewContainer"] .stMarkdown li,
+[data-testid="stAppViewContainer"] label,
+[data-testid="stAppViewContainer"] [data-testid="stWidgetLabel"] {
+    color: var(--ink);
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+    background: linear-gradient(135deg, #0A2540 0%, #0B6FD6 100%);
+    color: #FFFFFF;
+    border-radius: 24px;
+    padding: 56px 48px;
+    margin-bottom: 28px;
+    box-shadow: 0 18px 40px rgba(11, 111, 214, .25);
+}
+
+.hero h1 {
+    color: #FFFFFF;
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    line-height: 1.15;
+}
+
+.hero .tag {
+    color: #CFE5FF;
+    font-size: 1.15rem;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.hero p {
+    color: #E6F1FF;
+    max-width: 760px;
+    font-size: 1.02rem;
+    line-height: 1.6;
+}
+
+.hero,
+.hero * {
+    color: #FFFFFF;
+}
+
+.hero .tag {
+    color: #CFE5FF;
+}
+
+.hero p {
+    color: #E6F1FF;
+}
+
+/* =========================================
+   BADGES
+   ========================================= */
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, .16);
+    border: 1px solid rgba(255, 255, 255, .3);
+    color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: .78rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+/* =========================================
+   PAGE HEADER
+   ========================================= */
+
+.page-header {
+    border-left: 6px solid var(--blue);
+    padding: 6px 18px;
+    margin-bottom: 22px;
+    background: #FFFFFF;
+    border-radius: 0 14px 14px 0;
+    box-shadow: 0 2px 10px rgba(10, 37, 64, .05);
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 1.9rem;
+    color: var(--navy);
+}
+
+.page-header p {
+    margin: 4px 0 0 0;
+    color: var(--muted);
+}
+
+/* =========================================
+   FEATURE GRID AND CARDS
+   ========================================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin: 10px 0 26px 0;
+}
+
+.card {
+    background: #FFFFFF;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 4px 16px rgba(10, 37, 64, .05);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(11, 111, 214, .14);
+}
+
+.card .icon {
+    font-size: 1.7rem;
+    background: var(--sky);
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.05rem;
+    color: var(--navy);
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: .93rem;
+    line-height: 1.55;
+}
+
+/* =========================================
+   METRIC CARDS
+   ========================================= */
+
+.metric {
+    background: #FFFFFF;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 4px 14px rgba(10, 37, 64, .05);
+}
+
+.metric .v {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--blue);
+}
+
+.metric .k {
+    font-size: .8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-weight: 600;
+}
+
+/* =========================================
+   PIPELINE
+   ========================================= */
+
+.pipeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+    margin: 14px 0 24px 0;
+}
+
+.step {
+    flex: 1 1 150px;
+    background: #FFFFFF;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--blue);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(10, 37, 64, .05);
+}
+
+.step .n {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.step h4 {
+    margin: 0 0 4px 0;
+    color: var(--navy);
+    font-size: .98rem;
+}
+
+.step p {
+    margin: 0;
+    font-size: .82rem;
+    color: var(--muted);
+}
+
+.arrow {
+    align-self: center;
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* =========================================
+   CHIPS
+   ========================================= */
+
+.chips span {
+    display: inline-block;
+    background: var(--sky);
+    color: var(--navy);
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin: 4px 6px 4px 0;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+/* =========================================
+   DISCLAIMER AND STATUS MESSAGES
+   ========================================= */
+
+.disclaimer {
+    background: #FFF8E6;
+    border: 1px solid #F5D98B;
+    color: #6B4E00;
+    border-radius: 14px;
+    padding: 14px 18px;
+    font-size: .9rem;
+    margin: 18px 0;
+}
+
+.status-ok {
+    background: #E7F8F4;
+    border: 1px solid #9EE3D8;
+    color: #07564D;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+}
+
+.status-warn {
+    background: #FFF1F0;
+    border: 1px solid #F5B5B0;
+    color: #7A1F17;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.stButton > button,
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #0B6FD6, #0A4FA6);
+    color: #FFFFFF !important;
+    border: 0;
+    border-radius: 12px;
+    padding: .6rem 1.3rem;
+    font-weight: 600;
+    transition: all .15s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(11, 111, 214, .35);
+    color: #FFFFFF !important;
+}
+
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+[data-testid="stSidebar"] {
+    background: #F2F7FE !important;
+    border-right: 1px solid var(--line);
+    color: var(--ink) !important;
+}
+
+/* Sidebar text */
+
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] a,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
+    color: var(--ink) !important;
+}
+
+/* Sidebar navigation */
+
+[data-testid="stSidebarNav"] a {
+    color: var(--ink) !important;
+}
+
+[data-testid="stSidebarNav"] a:hover {
+    background: #E3EEFC !important;
+    color: var(--blue) !important;
+}
+
+/* =========================================
+   FILE UPLOADER
+   ========================================= */
+
+[data-testid="stFileUploader"] {
+    color: var(--ink) !important;
+}
+
+[data-testid="stFileUploader"] section {
+    border: 2px dashed #9CC4F2;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+[data-testid="stFileUploader"] section * {
+    color: var(--ink) !important;
+}
+
+/* =========================================
+   INPUTS AND SELECTBOXES
+   ========================================= */
+
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input {
+    color: var(--ink) !important;
+}
+
+[data-baseweb="select"] * {
+    color: var(--ink) !important;
+}
+
+[data-testid="stWidgetLabel"] {
+    color: var(--ink) !important;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 720px) {
+    .hero {
+        padding: 32px 22px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .arrow {
+        display: none;
+    }
+}

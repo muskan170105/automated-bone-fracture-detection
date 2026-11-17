@@ -1,0 +1,46 @@
+section,metric,value
+meta,dataset,pkdarabi/bone-fracture-detection-computer-vision-project
+meta,model,YOLOv8n
+meta,imgsz,640
+meta,epochs,5
+meta,batch,16
+meta,lr0,0.01
+meta,seed,42
+meta,conf,0.05
+meta,iou,0.4
+meta,n_test_images,1242
+meta,n_test_positive,594
+meta,n_test_negative,648
+meta,split_method,"grouped (patient id / augmentation-source) shuffle, seed=42"
+meta,note,mAP/precision/recall (Ultralytics) are class-averaged at the validator's max-F1 point; box-level precision/recall/IoU are class-agnostic at IoU>=0.5 and the chosen confidence.
+detection,precision,0.23230214943299413
+detection,recall,0.21948095312640845
+detection,map50,0.15427690373091812
+detection,map50_95,0.04555508215650492
+detection,mean_matched_iou,0.663354016629337
+detection,box_precision_at_threshold,0.20955882352941177
+detection,box_recall_at_threshold,0.3285302593659942
+detection,box_f1_at_threshold,0.2558922558922559
+image_level,sensitivity,0.7643097643097643
+image_level,specificity,0.7777777777777778
+image_level,precision,0.7591973244147158
+image_level,f1,0.761744966442953
+image_level,accuracy,0.7713365539452496
+image_level,tp,454
+image_level,fp,144
+image_level,tn,504
+image_level,fn,140
+latency_ms,mean,10.511877499980073
+latency_ms,median,9.482828000045629
+latency_ms,p95,15.568865250008912
+latency_ms,std,2.214211501786641
+latency_ms,warmup_runs,10
+latency_ms,timed_runs,50
+latency_ms,imgsz,640
+latency_ms,batch_size,1
+latency_ms,conf,0.05
+latency_ms,iou,0.4
+latency_ms,python,3.13.16
+latency_ms,platform,Linux-6.6.159+-x86_64-with-glibc2.39
+latency_ms,torch,2.11.0+cu130
+latency_ms,device,Tesla T4

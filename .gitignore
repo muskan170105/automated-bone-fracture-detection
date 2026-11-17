@@ -1,0 +1,39 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+kaggle.json
+.kaggle/
+
+# Dataset files - do not upload
+raw_dataset/
+processed_dataset/
+datasets/
+
+# Model training outputs
+runs/
+*.log
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Archives
+*.zip

@@ -1,0 +1,43 @@
+{
+  "images_found": 8296,
+  "corrupted": [],
+  "skipped_no_label": 0,
+  "invalid_boxes_dropped": 0,
+  "label_sources": {
+    "yolo": 8296,
+    "voc": 0,
+    "coco": 0
+  },
+  "classes": [
+    "elbow positive",
+    "fingers positive",
+    "forearm fracture",
+    "humerus fracture",
+    "humerus",
+    "shoulder fracture",
+    "wrist positive"
+  ],
+  "splits": {
+    "train": {
+      "images": 5808,
+      "positive": 2946,
+      "negative": 2862,
+      "boxes": 3396
+    },
+    "val": {
+      "images": 1246,
+      "positive": 580,
+      "negative": 666,
+      "boxes": 686
+    },
+    "test": {
+      "images": 1242,
+      "positive": 594,
+      "negative": 648,
+      "boxes": 694
+    }
+  },
+  "images_used": 8296,
+  "group_count": 1342,
+  "split_method": "grouped (patient id / augmentation-source) shuffle, seed=42"
+}

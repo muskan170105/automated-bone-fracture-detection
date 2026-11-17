@@ -1,0 +1,10 @@
+model:
+  weights: models/best.pt      # created by the Colab notebook after training
+  imgsz: 640
+  conf: 0.25                   # overridden by results/thresholds.json once tuned on validation data
+  iou: 0.45
+app:
+  max_upload_mb: 10
+  store_uploads: false         # uploaded X-rays are processed in memory only
+  enhance_contrast_default: false
+  tiled_inference_default: false
