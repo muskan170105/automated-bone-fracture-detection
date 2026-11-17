@@ -90,7 +90,7 @@ with st.sidebar:
         "Confidence threshold",
         min_value=0.01,
         max_value=0.95,
-        value=0.10,
+        value=float(min(max(default_conf, 0.01), 0.95)),
         step=0.01,
         help="Predictions below this confidence are excluded."
     )
